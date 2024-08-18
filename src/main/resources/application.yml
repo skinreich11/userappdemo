@@ -1,0 +1,56 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    password: 
+    url: j
+    #this^ can only be run localy for now. Will change later when we figure out remote access
+    username: 
+  jpa:
+    hibernate:
+      ddl-auto: 
+    properties:
+      hibernate:
+        dialect: 
+        format_sql: true
+    show-sql: true
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+  mail:
+    host: 
+    port: 
+    username: 
+    password: 
+
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+cloud:
+  aws:
+    credentials:
+      access-key: 
+      secret-key: 
+    region:
+      static: 
+    stack:
+      auto: 
+
+application:
+  bucket:
+    name: compscilibuserbucket
